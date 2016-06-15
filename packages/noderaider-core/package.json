@@ -1,0 +1,23 @@
+{
+  "name": "noderaider-core",
+  "version": "0.1.0",
+  "description": "Core utils for noderaider libs.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noderaider/noderaider.git"
+  },
+  "keywords": [
+    "noderaider",
+    "utils"
+  ],
+  "author": "Cole Chamberlain <cole.chamberlain@gmail.com> (http://noderaider.js.org)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noderaider/noderaider/issues"
+  },
+  "homepage": "https://github.com/noderaider/noderaider#readme"
+}
