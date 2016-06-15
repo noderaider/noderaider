@@ -1,13 +1,13 @@
 {
   "name": "noderaider-cli",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Core utils for noderaider libs.",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha"
   },
   "dependencies": {
-    "noderaider-core": "^0.1.0"
+    "noderaider-core": "^0.0.1"
   },
   "repository": {
     "type": "git",
