@@ -1,0 +1,71 @@
+{
+  "name": "noderaider",
+  "version": "0.2.0",
+  "description": "Automation for noderaider repos and packages.",
+  "main": "index.js",
+  "bin": "bin.js",
+  "preferGlobal": true,
+  "scripts": {
+    "start": "npm run build -- --watch",
+    "prebuild": "rimraf bin.js index.js",
+    "build": "cross-env NODE_ENV=production tsc --project tsconfig.build.json --rootDir src --outDir .",
+    "test": "jest",
+    "preversion": "npm test"
+  },
+  "dependencies": {
+    "invariant": "^2.2.2"
+  },
+  "devDependencies": {
+    "@types/invariant": "^2.2.29",
+    "@types/jest": "^21.1.6",
+    "@types/node": "^8.0.52",
+    "@types/sinon": "^4.0.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-preset-env": "^1.6.1",
+    "cross-env": "^5.1.1",
+    "jest": "^21.2.1",
+    "react": "^16.0.0",
+    "rimraf": "^2.6.2",
+    "sinon": "^4.1.2",
+    "ts-jest": "^21.2.2",
+    "tslib": "^1.8.0",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.1"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ],
+    "testRegex": "/__tests__/.*\\.test\\.(ts|tsx)$",
+    "globals": {
+      "__JEST__": true,
+      "ts-jest": {
+        "useBabelrc": true
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noderaider/noderaider.git"
+  },
+  "keywords": [
+    "cli",
+    "automation",
+    "noderaider",
+    "redux-idle-monitor",
+    "localsync"
+  ],
+  "author": "Cole Chamberlain <colewc@google.com> (https://github.com/cchamberlain)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noderaider/noderaider/issues"
+  },
+  "homepage": "https://github.com/noderaider/noderaider#readme"
+}
